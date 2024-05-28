@@ -2,7 +2,7 @@ exports.cartPage=class cartPage{
 
     constructor(page){
         this.page=page;
-        this.numberOfbeerProducts="";
+        this.numberOfbeerProducts="//div[@id='mydel']//div[3]";
     }
     async checkProductInCart(productname){
         const product=await this.page.$$(this.beerProduct);
